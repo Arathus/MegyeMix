@@ -3,10 +3,6 @@ package com.megyemix.model.adatbank;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by i302657 on 2017. 07. 09..
- */
-
 public class Season {
 
     public Season() {

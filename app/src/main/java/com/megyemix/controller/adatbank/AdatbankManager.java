@@ -24,6 +24,11 @@ public class AdatbankManager {
     }
 
 
+    /**
+     *  Egy adott forduló meccseit letölti a db-ből
+     * @param type : megye1 vagy megye2
+     * @param roundNumber : forduló szám
+     */
     public void GetRoundMatches(String type,String roundNumber){
         DatabaseReference mSeasonDatabase = rootRef.child(type).child(roundNumber);
         mSeasonDatabase.addValueEventListener(new ValueEventListener() {
@@ -52,7 +57,12 @@ public class AdatbankManager {
         });
     }
 
-
+    /**
+     * Egy adott forduló adott mérkőzését tölti le
+     * @param type : megye1 vagy megye2
+     * @param round : forduló szám
+     * @param match : adott id-jú meccs
+     */
     public void GetMatch(String type,String round,String match){
 
         DatabaseReference mMatch = FirebaseDatabase.getInstance().getReference().child("matches").child(type).child(round).child(match);
