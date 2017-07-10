@@ -1,21 +1,14 @@
 package com.megyemix.controller.adatbank;
 
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.GenericTypeIndicator;
-import com.google.firebase.database.ValueEventListener;
-import com.megyemix.model.adatbank.Match;
-import com.megyemix.model.adatbank.Round;
 
-import java.util.Map;
-
-public class AdatbankManager {
+//TODO visszaállítani. Csak azért kapcsoltam ki ideiglenesen, hogy foglalkozni tudjak a designnal.
+public class AdatbankManager {/*
 
     private String databaseName;
     private int seasonID;
+*//*
     private DatabaseReference rootRef;
+*//*
 
     public AdatbankManager(String databaseName, int seasonID) {
         this.databaseName = databaseName;
@@ -24,11 +17,11 @@ public class AdatbankManager {
     }
 
 
-    /**
+    *//**
      *  Egy adott forduló meccseit letölti a db-ből
      * @param type : megye1 vagy megye2
      * @param roundNumber : forduló szám
-     */
+     *//*
     public void GetRoundMatches(String type,String roundNumber){
         DatabaseReference mSeasonDatabase = rootRef.child(type).child(roundNumber);
         mSeasonDatabase.addValueEventListener(new ValueEventListener() {
@@ -57,12 +50,12 @@ public class AdatbankManager {
         });
     }
 
-    /**
+    *//**
      * Egy adott forduló adott mérkőzését tölti le
      * @param type : megye1 vagy megye2
      * @param round : forduló szám
      * @param match : adott id-jú meccs
-     */
+     *//*
     public void GetMatch(String type,String round,String match){
 
         DatabaseReference mMatch = FirebaseDatabase.getInstance().getReference().child("matches").child(type).child(round).child(match);
@@ -78,5 +71,5 @@ public class AdatbankManager {
                 }
             });
 
-    }
+    }*/
 }

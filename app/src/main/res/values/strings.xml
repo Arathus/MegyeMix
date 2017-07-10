@@ -1,8 +1,17 @@
 <resources>
     <string name="app_name">MegyeMix</string>
 
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="draweritem1">Tippjáték</string>
+    <string name="draweritem2">Küldetések</string>
+    <string name="draweritem3">Mérkőzések</string>
+    <string name="draweritem4">Eredményeim</string>
+    <string name="draweritem5">Kapcsolat</string>
 
-    <string name="action_settings">Settings</string>
+    <string name="twice_to_back">"Nyomd a VISSZA gombot mégegyszer a kilépéshez"</string>
+
+
+
+
+
+
 </resources>
